@@ -6,6 +6,12 @@ module.exports = [{
   devtool: 'inline-source-map',
   entry: './index.js',
   mode: 'development',
+  resolve: {
+    fallback: {
+      path: require.resolve('path-browserify'),
+      querystring: require.resolve('querystring-es3'),
+    },
+  },
   module: {
     rules: [
       {
@@ -35,6 +41,12 @@ module.exports = [{
 }, {
   entry: './index.js',
   mode: 'production',
+  resolve: {
+    fallback: {
+      path: require.resolve('path-browserify'),
+      querystring: require.resolve('querystring-es3'),
+    },
+  },
   module: {
     rules: [
       {

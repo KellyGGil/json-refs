@@ -56,7 +56,7 @@ Below is the list of projects being used by json-refs and the purpose(s) they ar
 * [graphlib][graphlib]: Used to identify circular paths _(to avoid reinventing the wheel)_
 * [lodash][lodash]: JavaScript utilities _(to avoid reinventing the wheel)_
 * [native-promise-only][native-promise-only]: Used to shim in [Promises][promises] support
-* [path-loader][path-loader]: Used to load Swagger files from the local filesystem and remote URLs
+* [my-path-loader][my-path-loader]: Used to load Swagger files from the local filesystem and remote URLs
 
 ## Resolution
 

@@ -1,11 +1,13 @@
 {
-  "name": "json-refs",
-  "version": "3.0.15",
+  "name": "my-json-refs",
+  "version": "3.0.17",
   "description": "Various utilities for JSON References (http://tools.ietf.org/html/draft-pbryan-zyp-json-ref-03).",
   "main": "index.js",
   "scripts": {
     "gulp": "gulp",
-    "test": "gulp test"
+    "test": "gulp test",
+    "build": "webpack --mode production",
+    "preinstall": "npx npm-force-resolutions"
   },
   "author": {
     "name": "Jeremy Whitlock",
@@ -62,19 +64,26 @@
     "karma-phantomjs-launcher": "^1.0.4",
     "karma-webpack": "^4.0.2",
     "mocha": "^7.0.1",
+    "npm-force-resolutions": "^0.0.10",
+    "path-browserify": "^1.0.1",
     "phantomjs-prebuilt": "^2.1.16",
+    "querystring-es3": "^0.2.1",
     "run-sequence": "^2.2.1",
     "transform-loader": "^0.2.4",
-    "webpack": "^4.41.6"
+    "webpack": "^5.95.0",
+    "webpack-cli": "^5.1.4"
   },
   "dependencies": {
     "commander": "~4.1.1",
     "graphlib": "^2.1.8",
     "js-yaml": "^3.13.1",
     "lodash": "^4.17.15",
+    "my-path-loader": "1.0.13",
     "native-promise-only": "^0.8.1",
-    "path-loader": "^1.0.10",
     "slash": "^3.0.0",
     "uri-js": "^4.2.2"
+  },
+  "resolutions": {
+    "path-loader": "my-path-loader"
   }
 }

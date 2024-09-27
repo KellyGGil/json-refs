@@ -164,7 +164,7 @@ declare module 'json-refs' {
         /**
          * The location of the document being processed  *(This property is only
          * useful when resolving references as it will be used to locate relative references found within the document being
-         * resolved. If this value is relative, {@link https://github.com/whitlockjc/path-loader|path-loader} will use
+         * resolved. If this value is relative, {@link https://github.com/whitlockjc/path-loader|my-path-loader} will use
          * `window.location.href` for the browser and `process.cwd()` for Node.js.)*
          */
         location?: string;
